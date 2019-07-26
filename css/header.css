@@ -1,0 +1,20 @@
+.header {
+    background: url("../imagenes/Moes_Bar.jpg");
+    background-size: contain;
+    margin-bottom: 15px;
+}
+#moe-img {
+    position: relative;
+    left: 0px;
+}
+.sillas{
+    text-align: center;
+    
+}
+.sillas h2{
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+.sillas a{
+    text-decoration: none;
+}
