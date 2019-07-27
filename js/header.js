@@ -1,20 +1,27 @@
 $(document).ready(function ($) {
-    $(".header").mousemove(function (event) {
-        var msg = event.pageX + ", " + event.pageY;
-        // console.log(msg)
+        
+    $( '.barra' ) .mousemove( function ( event ) {
+        
+        let bar = $( '.barra' ),
+            mouseX, mouseY,
+            barX = bar .offset() .left,
+            barY = bar .offset() .top;
 
+        mouseX = event .pageX - barX;
+        mouseY = event .pageY - barY;
+        console .log( mouseX, mouseY );
+        
         // 100 es 85 + 15 tamaño de la imagen + esquina izquierda
-        if (event.pageX < 100) {
-            $("#moe-img").css("left", "15px")
+        var data = 50;
+        if ( mouseX < data ) {
+            $("#moe-img").css("left", "5px")
 
             //calculado a mano 
-        } else if (event.pageX > $(window).width() - 200) {
-            $("#moe-img").css("left", $(window).width() - 200)
-
+        } else if (mouseX > $( '.barra' ) .width() - data ) {
+            $("#moe-img").css("left", $( '.barra' ).width() - data );
         } else {
-            $("#moe-img").css("left", event.pageX - 85)// 85 es la mitad de la imagen
+            $("#moe-img").css("left", mouseX - 85)// 85 es la mitad de la imagen
         }
-
     });
 
 }); 

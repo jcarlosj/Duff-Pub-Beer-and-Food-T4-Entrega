@@ -1,20 +1,29 @@
 .header {
-    background: url("../imagenes/Moes_Bar.jpg");
-    background-size: contain;
-    margin-bottom: 15px;
+    background-image: url("../imagenes/moes-bar.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*border: 5px dotted blue;
+    box-sizing: border-box;*/
 }
 #moe-img {
     position: relative;
     left: 0px;
+    width: 7rem;
+    margin-top: 11rem;
+    margin-bottom: 3rem;
 }
-.sillas{
-    text-align: center;
-    
+.menu-main {
+    list-style: none;
 }
-.sillas h2{
-    text-shadow: 2px 2px 2px black;
+.menu-main .item-name {
     color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black; 
 }
-.sillas a{
+.chair {
+    width: 68%;
+}
+.chair a {
     text-decoration: none;
 }
