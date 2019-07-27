@@ -27,3 +27,6 @@
 .chair a {
     text-decoration: none;
 }
+.chair a:hover {
+    text-decoration: none;
+}
