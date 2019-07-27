@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Moes Bar - Contáctenos</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
             <div class="row">
                 <div class="col-6 m-auto barra">
                     <img id="moe-img" src="imagenes/moe.jpg" alt="">
-                    <div class="d-none">
+                    <div>
                         <ul class="menu-main d-flex d-inline-flex justify-content-between">
                             <li class="text-uppercase text-center">
                                 <a href="index.html">
@@ -44,135 +46,261 @@
         </div>
     </header>
     <main>
-        <div class="container contacto">
-            <form class="m-auto" style="width: 80%">
-                <h2>Contacto</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa earum repellat aperiam sint minus
-                    modi quae ratione. Distinctio, cum! Quia obcaecati tempora cumque provident. Accusamus vero odio quod
-                    qui!15
-                </p>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Nombres</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Javier Lopez">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4"
-                            placeholder="Ej: javier.lopez@correo.com">
-                    </div>
+        <div class="container contacto mt-5 mb-5 pt-3 pb-3">
+            <h1>¿Cómo te podemos ayudar?</h1>
+            <p>Existen diferentes formas de contactarnos, dependiendo de tus necesidades.</p>
+            <div class="row">
+                <div class="col-12 col-md-4 text-center">
+                    <div class="icon-contact"><i class="fas fa-beer"></i></div>
+                    <h2 class="title">Eventos</h2>
+                    <p class="description">Si quieres participar de alguno de los eventos que tienen lugar puedes inscribirte. Recuerda que muchos de ellos tienen cupos limitados.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eventos">
+                        Quiero participar
+                    </button>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Asunto</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Solicitud cotizacion">
+                <div class="col-12 col-md-4 text-center">
+                    <div class="icon-contact"><i class="fab fa-telegram-plane"></i></div>
+                    <h2 class="title">Reservas</h2>
+                    <p class="description">El éxito de Moes Bar ha hecho que tengamos espacios especiales para momentos especiales. Habla con nuestro equipo y realiza tu reserva.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reservas">
+                        Hacer mi reserva
+                    </button>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <div class="icon-contact"><i class="far fa-envelope"></i></div>
+                    <h2 class="title">Contactános</h2>
+                    <p class="description">¿Tal ves quieres comunicarte con nosotros hacer tus preguntas, hacernos comentarios, realizar tus reclamos o darnos sugerencias? Estaremos aquí para informarte.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contacto">
+                        Has tú pregunta
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal 'eventos' -->
+            <div class="modal fade" id="eventos" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Eventos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="form-group col-md-6">
-                            <label for="inputState">Dirigido a: </label>
-                            <select id="inputState" class="form-control">
-                                <option selected>Seleccione...</option>
-                                <option>Administracion</option>
-                                <option>Seguridad</option>
-                                <option>Quejas y reclamos</option>
-                            </select>
+                    <div class="modal-body">
+                        
+                        <div class="container eventos">
+                            <form class="">
+                                <p>Todos los eventos tienen un cupo limitado, sin embargo puedes quedar en lista de espera en caso de cancelación por parte de alguna persona que haya confirmado no asistir al evento.</p>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Nombres</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Javier Lopez">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4"
+                                            placeholder="Ej: javier.lopez@correo.com">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Fecha</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Seleccione...</option>
+                                            <option>26/07/2019</option>
+                                            <option>02/08/2019</option>
+                                            <option>25/08/2019</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Evento</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Seleccione...</option>
+                                            <option>React Pizza y Cerveza</option>
+                                            <option>Beer and Languaje</option>
+                                            <option>Comediantes a la carta</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    <div class="form-group col-md-12">
-                        <label for="exampleFormControlTextarea1">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                        <!-- .container .eventos -->
 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Subscribirme</button>
+                    </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-        <!-- .container .contacto -->
+            </div>
 
-        <div class="container reservas" style="margin-top: 60px">
-            <form class="m-auto" style="width: 80%">
-                <h2>Reservas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa earum repellat aperiam sint minus
-                        modi quae ratione. Distinctio, cum! Quia obcaecati tempora cumque provident. Accusamus vero odio quod
-                        qui!15</p>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Nombres</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Javier Lopez">
+            <!-- Modal 'reservas' -->
+            <div class="modal fade" id="reservas" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Realiza tu reserva</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4"
-                            placeholder="Ej: javier.lopez@correo.com">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputState">Servicios</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Seleccione...</option>
-                            <option>Restaurante</option>
-                            <option>Bar</option>
-                            <option>Eventos</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputState">Sitio</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Seleccione...</option>
-                            <option>Sede Andino</option>
-                            <option>Sede Titan</option>
-                            <option>Sede Fontanar</option>
-                            <option>Sede Centro Mayor</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="inputState">Fecha</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Seleccione...</option>
-                            <option>26/07/2019</option>
-                            <option>02/08/2019</option>
-                            <option>25/08/2019</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState">Hora de reserva</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Seleccione...</option>
-                            <option>5:00 pm</option>
-                            <option>7:45 pm</option>
-                            <option>8:30 pm</option>
-                            <option>9:30 pm</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState">Mesas disponibles</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Seleccione...</option>
-                            <option>Mesa 5 (Terraza)</option>
-                            <option>Mesa 11 (Interior)</option>
-                            <option>Mesa 19 (Vista Fuente)</option>
-                            <option>Mesa 25 (Interior)</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="exampleFormControlTextarea1">Detalles de la reserva</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                </div>
+                    <div class="modal-body">
+                        
+                        <div class="container reservas">
+                            <form class="">
+                                <p>Una ves realizada tu reserva, nos pondremos en contacto para verificar tus datos.</p>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Nombres</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Javier Lopez">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4"
+                                            placeholder="Ej: javier.lopez@correo.com">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Servicios</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Seleccione...</option>
+                                            <option>Restaurante</option>
+                                            <option>Bar</option>
+                                            <option>Eventos</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Sitio</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Seleccione...</option>
+                                            <option>Sede Andino</option>
+                                            <option>Sede Titan</option>
+                                            <option>Sede Fontanar</option>
+                                            <option>Sede Centro Mayor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">Fecha</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Seleccione...</option>
+                                            <option>26/07/2019</option>
+                                            <option>02/08/2019</option>
+                                            <option>25/08/2019</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">Hora de reserva</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Seleccione...</option>
+                                            <option>5:00 pm</option>
+                                            <option>7:45 pm</option>
+                                            <option>8:30 pm</option>
+                                            <option>9:30 pm</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">Mesas disponibles</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Seleccione...</option>
+                                            <option>Mesa 5 (Terraza)</option>
+                                            <option>Mesa 11 (Interior)</option>
+                                            <option>Mesa 19 (Vista Fuente)</option>
+                                            <option>Mesa 25 (Interior)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="exampleFormControlTextarea1">Detalles de la reserva</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+                
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Acepto Terminos y condiciones
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- .container .reservas -->
 
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Acepto Terminos y condiciones
-                        </label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Reservar</button>
+                    </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Reservar</button>
-            </form>
-        </div>
-        <!-- .container .reservas -->
+            </div>
+
+            <!-- Modal 'contacto' -->
+            <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        
+                            <div class="container contacto">
+                                <form class="">
+                                    <p>Todos los datos solicitados nos permitirán date una respuesta más acertada.</p>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Nombres</label>
+                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Javier Lopez">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4"
+                                                placeholder="Ej: javier.lopez@correo.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Asunto</label>
+                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: Solicitud cotizacion">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                                <label for="inputState">Dirigido a: </label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Seleccione...</option>
+                                                    <option>Administracion</option>
+                                                    <option>Seguridad</option>
+                                                    <option>Quejas y reclamos</option>
+                                                </select>
+                                            </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="exampleFormControlTextarea1">Mensaje</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                    
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- .container .contacto -->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- .container .contacto -->
+
     </main>
     <footer>
         <section id="footer">
