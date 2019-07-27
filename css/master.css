@@ -1,6 +1,40 @@
+/* Header */
+.header {
+    background: url("../imagenes/Moes_Bar.jpg");
+    background-size: contain;
+    margin-bottom: 15px;
+}
+#moe-img {
+    position: relative;
+    left: 0px;
+}
+.sillas{
+    text-align: center;
+    
+}
+.sillas h2{
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+.sillas a{
+    text-decoration: none;
+}
+#footer{
+    margin-top: 15px;
+}
+
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section#footer {
+    padding: 60px 0;
+}
 
+section#footer .section-title {
+    text-align: center;
+    color: #937139;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
 #footer {
     background: #937139 !important;
 }
@@ -57,10 +91,10 @@
 }
 
 @media (max-width:767px){
-	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
+        #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
 }
