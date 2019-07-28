@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- este efecto solo aplica en una etiqueta -->
+    <div style="text-align: center; margin-top: 200px">
+        <div class="burbujas">
+            <img width="300px" src="imagenes/cervezaEjemplo.png" alt="">
+        </div>
+    </div>
+    <style>
+        body {
+            /* background: #b95f04; */
+
+        }
+
+
+        .burbujas {
+            display: inline-block;
+            font-family: arial;
+            position: relative;
+        }
+
+        .burbujas h1 {
+            position: relative;
+            margin: 1em 0 0;
+            font-family: 'Luckiest Guy', cursive;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .burbuja-individual {
+            position: absolute;
+            border-radius: 100%;
+            /* ajustar bottom dependiendo de cual es el piso desde donde salen las burbujas
+            */
+            bottom: 45px;
+            background-color: #fff;
+            z-index: 1;
+            opacity: 0.5;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            setInterval(function () {
+                //elige un tamaño de burbuja al azar entre los rangos 6,15 pixeles
+                var tamBurbuja = getRandomInt(6, 20)
+
+                // los valores de aparicion de las burbujas se tienen que ajustar a mano porque dependen de la imagen y su tamaño
+                var inicioAparicionBurbuja = 67;
+                var finAparicionBurbuja = $(".burbujas").width() - 115;
+
+                var offsetBurbuja = getRandomInt(inicioAparicionBurbuja, finAparicionBurbuja)// se crean los valores que empujan desde la izq las burbujas a lo largo del texto, el tamaño del texto esta dado por el ancho contenedor con width
+
+                $(".burbujas").append('<div class="burbuja-individual" style="left:' + offsetBurbuja + 'px; width: ' + tamBurbuja + 'px; height: ' + tamBurbuja + 'px"></div>')
+
+
+                $(".burbuja-individual").animate({
+                    "bottom": "100%",
+                    "opacity": "-=0.3" // reducir la opacidad 
+
+                }, 4000, function () {
+                    $(this).remove()
+                })
+
+
+
+            }, 150)
+
+
+
+        })  
+    </script>
+</body>
+
+</html>
