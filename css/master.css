@@ -9,23 +9,21 @@ html, body {
 .icon-contact {
     font-size: 7rem;
 }
-.subscripcion{
+.subscripcion {
     background-color: #020202 ;
-    border: 3px dotted yellow;
-    box-sizing: border-box;
-    height: 230px;
+    color: white;
+}
+.subscripcion h3 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+.subscripcion p {
+    color: #E8B504;
+    font-size: 2rem;
+    margin-bottom: .3rem;
 }
 /* BEER ANIMATION */
-#beer_text {
-	font-family: 'futura';
-	color: white;
-	letter-spacing: 20px;
-	font-size: 55px;
-	position: absolute;
-	top: 55px;
-	left: 270px;
-}
-
 #dribbble {
 	color: #EC4E8B;
 }
@@ -46,65 +44,70 @@ a {
 	text-decoration: none;
 }
 
-body {
-	background: #201F1E;
-}
-
 #glass {
 	width: 70px;
-    height: 90px;
+    height: 110px;
     background: transparent;
     border: solid 3.5px white;
     border-top: none;
     border-radius: 0 0 10px 10px;
     position: absolute;
     top: 60px;
-    left: 200px;
+    left: 120px;
     overflow: hidden;
     transform: rotate(-20deg);
     -webkit-animation: glass 10s infinite;
 }
 	
-/* #poignet {
-		width: 30px;
-		height: 55px;
-		background: transparent;
-		border: solid 3.5px white;
-		position: absolute;
-		top: 50px;
-		left: 270px;
-		border-radius: 0 16px 16px 0;
-		border-left: none;
-		transform: rotate(-20deg);
+#poignet {
+    width: 30px;
+    height: 55px;
+    background: transparent;
+    border: solid 3.5px white;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    border-radius: 0 16px 16px 0;
+    border-left: none;
+    transform: rotate(-20deg);
 	-webkit-animation: poignet 10s infinite;
-} */
+    z-index: 4;
+} 
 
 #beer {
-	width: 58px;
-	height: 84px;
+	width: 65px;
+	height: 108px;
 	background: transparent;
 	position: absolute;
-	left: 6px;
-	top: 0px;
+	left: 0;
+	top: 0;
 	border-radius: 0 0 5px 5px;
 	overflow: hidden;
 }
 #beer::before {
     content: "";
     width: 200px;
-    height: 180px;
+    height: 103px;
     background-color: #E8B504;
     position: absolute;
-    top: 45px;
+    top: 86px;
     left: -54px;
     transform: rotate(40deg);
     -webkit-animation: beer 10s infinite;
 }
-
+#logo {
+    background-image: url( '../imagenes/duff.jpg' );
+    background-size: cover;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 4px;
+    top: 24px;
+}
 #mousse_1 {
 	position: absolute;
 	top: 45px;
-	left: 198px;
+	left: 175px;
 	z-index: 4;
 
 }
@@ -133,7 +136,7 @@ body {
 #mousse_2 {
 	position: absolute;
 	top: 45px;
-	left: 212px;
+	left: 160px;
 	z-index: 4;
 }
 #mousse_2::before {
@@ -161,7 +164,7 @@ body {
 #mousse_3 {
 	position: absolute;
 	top: 45px;
-	left: 228px;
+	left: 115px;
 	z-index: 4;
 }
 #mousse_3::before {
@@ -188,8 +191,8 @@ body {
 
 #mousse_4 {
 	position: absolute;
-	top: 45px;
-	left: 242px;
+	top: 43px;
+	left: 133px;
 	z-index: 4;
 }
 #mousse_4::before {
@@ -215,8 +218,8 @@ body {
 
 #mousse_5 {
 	position: absolute;
-	top: 45px;
-	left: 257px;
+	top: 50px;
+	left: 155px;
 	z-index: 4;
 	-webkit-animation: mousse 10s infinite;
 	
@@ -232,8 +235,8 @@ body {
 
 #mousse_volante {
 	position: absolute;
-	top: 185px;
-	left: 212px;
+	top: 125px;
+    left: 150px;
 	z-index: 4;
 }
 #mousse_volante::before {
@@ -243,6 +246,8 @@ body {
     background: white;
     border-radius: 50%;
     position: absolute;
+    top: -80px;
+    left: -22px;
     -webkit-animation: mousse_volante 10s infinite;
 }
 
@@ -253,15 +258,15 @@ body {
     background: white;
     border-radius: 50%;
     position: absolute;
-    top: 15px;
-    left: 40px;
+    top: 23px;
+    left: 22px;
     -webkit-animation: mousse_volante 10s infinite;
 }
 
 #mousse_interieur {
 	position: absolute;
-	top: 255px;
-	left: 218px;
+	top: 140px;
+    left: 140px;
 	z-index: 4;
 	opacity: 0.9;
 }
@@ -288,8 +293,8 @@ body {
 }
 #mousse_interieur_2 {
 	position: absolute;
-	top: 235px;
-	left: 225px;
+    top: 137px;
+    left: 145px;
 	z-index: 4;
 	opacity: 0.9;
 }
@@ -317,8 +322,8 @@ body {
 
 #mousse_interieur_3 {
 	position: absolute;
-	top: 245px;
-	left: 232px;
+	top: 160px;
+    left: 158px;
 	z-index: 4;
 	opacity: 0.9;
 }
@@ -346,8 +351,8 @@ body {
 
 #mousse_interieur_4 {
 	position: absolute;
-	top: 241px;
-	left: 238px;
+	top: 137px;
+    left: 173px;
 	z-index: 4;
 	opacity: 0.9;
 }

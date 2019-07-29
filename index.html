@@ -49,12 +49,18 @@
     </header>
 
     <main>
-        <div class="container-fluid subscripcion">
+        <div class="container-fluid subscripcion pt-3 pb-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="text-break text-center">Recibe toda la información acerca de nuestros eventos</h3>
+                        <p class="text-break text-center">¿Qué estas esperando? Suscribete ahora!</p>
+                    </div>
+                    <div class="col-6 col-md-3">
                         <div id="glass">
-                            <div id="beer"></div>
+                            <div id="beer">
+                                <div id="logo"></div>
+                            </div>
                         </div>
                         <div id="poignet"></div>
                         <div id="mousse_1"></div>
@@ -67,21 +73,20 @@
                         <div id="mousse_interieur_2"></div>
                         <div id="mousse_interieur_3"></div>
                         <div id="mousse_interieur_4"></div>
-                        <p id="beer_text">D</p>
                     </div>
-                    <div class="col-6">
-                        <form class="form-inline">
-                            <div class="form-group mb-2">
-                                <label for="staticEmail2" class="sr-only">Nombre</label>
-                                <input type="text" class="form-control" id="inputPassword2"
-                                    placeholder="Ej: Javier Lopez">
+                    <div class="col-6 col-md-4">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Nombre</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej: Javier Lopez">
                             </div>
-                            <div class="form-group mx-sm-3 mb-2">
-                                <label for="inputPassword2" class="sr-only">Email</label>
-                                <input type="text" class="form-control" id="inputPassword2"
-                                    placeholder="Ej: javier.lopez@correo.com">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Email</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ej: javier.lopez@correo.com">
                             </div>
-                            <button type="submit" class="btn btn-primary mb-2">Quiero Subscribirme</button>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary mb-2">Quiero Subscribirme</button>
+                            </div>
                         </form>
                     </div>
                 </div>
