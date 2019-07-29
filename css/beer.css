@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+.header{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
