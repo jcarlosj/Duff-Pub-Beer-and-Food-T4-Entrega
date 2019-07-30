@@ -81,3 +81,7 @@
 .modal-dialog-scrollable .modal-footer, .modal-dialog-scrollable .modal-header {
     background-color: #9E1717 !important;
 }
+.copyright{
+	color: #ffffff;
+	font-size: 1.2em;
+}
