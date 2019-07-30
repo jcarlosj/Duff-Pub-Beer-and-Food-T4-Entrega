@@ -28,6 +28,8 @@ html, body {
 /* CAROUSEL */
 .productos {
     background-color: #020202;
+    background-image: url( '../imagenes/fondo-products.png' );
+
 }
 .productos hgroup {
     margin: .7rem 0;
