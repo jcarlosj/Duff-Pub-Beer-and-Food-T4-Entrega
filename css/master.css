@@ -644,13 +644,28 @@ a {
 }
 
 /*SERVICIOS*/
+.servicios h1,
+.servicios h3 {
+    color: #E8B504;
+}
+.servicios h2,
+.servicios p {
+    color: white;
+}
+.card {
+    background-color: #E8B504;
+    border: 1px solid #E8B504;
+}
 .card-text{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.98rem;
     text-align:justify;
 }
-.card-title{
+.card-title {
     text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 /** NOSOTROS: Team */
 section {
