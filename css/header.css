@@ -42,6 +42,11 @@
     width: 1px;
     filter: brightness(75%)
 }
+
+.contenedor-menu {
+    height: 0;
+}
+
 .menu-main {
     list-style: none;
     padding: 0;
@@ -60,6 +65,15 @@
         border:1px solid #020202;
         background: #020202;
         margin-bottom: 2px;
+    }
+
+    .contenedor-menu {
+        height: unset;
+    }
+
+    .contenedor-menu ul {
+        margin-top: 2px;
+        margin-bottom: 0;
     }
 }
 
