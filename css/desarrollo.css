@@ -1,0 +1,164 @@
+.active:hover{
+    background-color: rgba(255, 185, 22, 0);
+    /* font-family: AGency FB; */
+}
+
+.html{
+    /* height: 1800px; */
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.one{
+    background-size: cover; height: 600px; background-position: center;
+}
+.two{
+    background-size: cover; height: 600px; background-position: center;
+}
+.three{
+    background-size: cover; height: 600px; background-position: center;
+}
+.four{
+    background-size: cover; height: 600px; background-position: center;
+}
+.d-block{
+    height: 600px;
+}
+p{
+    font-size: 18px;
+    float:right;
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.imagenhtml{
+    width: 40%;
+    height: 500px;
+    float: left;
+    margin-top: 50px;
+}
+
+.htmll{
+    width: 95%;
+    height: 300px;
+    margin-top: 20px;
+   
+}
+
+
+.contenidohtml{
+    float: right;
+    width: 60%;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 500px;
+}
+
+/* QUE OFRECEMOS */
+.ofrecemos{
+    background-color: rgba(0, 255, 255, 0);
+    height: 450px;
+
+}
+.card-group{
+    margin-top: 62px;
+}
+.card-img-top{
+    height: 100px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h5{
+    text-align:center;
+}
+.card-text{
+    text-align: center;
+}
+
+/* realidad */
+.realidad{
+    width: 100%;
+    height: 500px;
+    /* background-color: blueviolet; */
+    /* background-image: url(imagenes/fondo1.jpg); */
+}
+.card-img{
+    height: 400px;
+}
+.derecha{
+    width: 50%;
+    height: 500px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.705);
+
+}
+.izquierda{
+    width: 50%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.863);
+    float: left;
+    text-align: center;
+}
+.fondo1{
+    width: 100%;
+    height: 350px;
+    margin-top: 110px;
+}
+h2.realidad{
+    margin-left: 300px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sub{
+    /* margin-left: 300px; */
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -400px;
+}
+.real{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+/* equipo */
+.team{
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 600px;
+    /* width: 100%; */
+    background-position: center;
+    background-size: 1500px;
+    background-color: white
+
+}
+
+.card-imgg{
+    width: 100%;
+    height: 250px;
+}
+
+h3.mision{
+    text-align: center;
+}
+
+#profile{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(255, 255, 255, 0.575);
+    height: 560px;
+
+}
+#profile-tab{
+color: greenyellow;
+}
+#home-tab{
+    color: greenyellow;
+}
+#contact-tab{
+    color: greenyellow;
+}
