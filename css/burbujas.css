@@ -17,7 +17,7 @@
     border-radius: 100%;
     /* ajustar bottom dependiendo de cual es el piso desde donde salen las burbujas
     */
-    bottom: 45px;
+    bottom: 15px;
     background-color: #fff;
     z-index: 3;
     opacity: 0.5;

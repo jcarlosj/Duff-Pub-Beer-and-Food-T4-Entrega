@@ -11,8 +11,8 @@ $(document).ready(function () {
         var tamBurbuja = getRandomInt(6, 20)
 
         // los valores de aparicion de las burbujas se tienen que ajustar a mano porque dependen de la imagen y su tamaño
-        var inicioAparicionBurbuja = 67;
-        var finAparicionBurbuja = $(".burbujas").width() - 115;
+        var inicioAparicionBurbuja = 10;
+        var finAparicionBurbuja = $(".burbujas").width() - 10;
 
         var offsetBurbuja = getRandomInt(inicioAparicionBurbuja, finAparicionBurbuja)// se crean los valores que empujan desde la izq las burbujas a lo largo del texto, el tamaño del texto esta dado por el ancho contenedor con width
 
