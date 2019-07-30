@@ -1,32 +1,112 @@
-.header {
-    background-image: url("../imagenes/moes-bar.jpg");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /*border: 5px dotted blue;
-    box-sizing: border-box;*/
+.logo {
+    width: 200px;
+    position: absolute;
+    left: 10px;
 }
+@media screen and (max-width: 1200px){
+    .logo {
+        width: 200px;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 992px){
+    .logo {
+        width: 150px;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .logo {
+        width: 115px;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 576px){
+    .logo {
+        width: 115px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .logo {
+        width: 85px;
+        left: 10px;
+    }
+}
+
+
 #moe-img {
-    position: relative;
+    position: absolute;
     left: 0px;
-    width: 7rem;
-    margin-top: 11rem;
-    margin-bottom: 3rem;
+    width: 1px;
+    filter: brightness(75%)
 }
+
+.contenedor-menu {
+    height: 0;
+}
+
 .menu-main {
     list-style: none;
+    padding: 0;
+    position: relative;
+    bottom: 75px;
+    /* bottom: 50px; */
+    /* bottom: 50px; */
 }
-.menu-main .item-name {
+
+@media screen and (max-width: 992px){
+    .menu-main {
+        position: unset;
+    }
+
+    .myButton {
+        border:1px solid #020202;
+        background: #020202;
+        margin-bottom: 2px;
+    }
+
+    .contenedor-menu {
+        height: unset;
+    }
+
+    .contenedor-menu ul {
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+}
+
+
+.menu-main a {
     color: white;
     font-weight: bold;
     text-shadow: 3px 3px 3px black; 
-}
-.chair {
-    width: 68%;
-}
-.chair a {
     text-decoration: none;
 }
-.chair a:hover {
-    text-decoration: none;
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	/* background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%); */
+	/* background-color:#465f5d; */
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background-color:#6c7c7cad;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }

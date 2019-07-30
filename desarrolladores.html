@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/desarrollo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url(imagenes/fondo.jpg); background-attachment: fixed">
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">DESARROLLADORES</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#fullstack"> <img src="imagenes/desarrollo.svg" alt=""
+                                style="width: 30px">¿ Qué Somos ?<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#ofrecemos"> <img src="imagenes/desarrollo1.svg" alt=""
+                                style="width: 30px">¿Qué Ofrecemos? <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#por"><img src="imagenes/desarrollo2.svg" alt="" style="width: 30px">
+                            ¿Por qué? <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#team"> <img src="imagenes/desarrollo3.png" alt=""
+                                style="width: 30px">¿Quienes Somos? <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <img src="imagenes/precio.svg" alt="" style="width: 30px">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Cotización
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col-7">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Nombres y Apellidos:">
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <input type="text" class="form-control" placeholder="Correo:">
+                                                    </div>
+                                                </div>
+                                            </form> <br>
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col-5">
+                                                        <input type="text" class="form-control" placeholder="Telefono:">
+                                                    </div>
+
+                                                    <div class="col-7">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Nombre Proyecto:">
+                                                    </div>
+                                            </form>
+                                        </div> <br>
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Describa el Proyecto:"
+                                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary"
+                                            data-dismiss="modal">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+            </a>
+
+
+        </nav>
+
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active one" style="background-image: url(imagenes/opcion4.jpeg);">
+                        <!-- <img src="imagenes/opcion4.jpeg" class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item two" style="background-image: url(imagenes/opcion2.jpg);">
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item three" style="background-image: url(imagenes/opcion1.jpg);">   
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item four">
+                        <img src="imagenes/opcion5.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="container-fluid html">
+            <div class="row">
+                <div class="col-lg-12 col-12 col-md-12" id="fullstack">
+                    <div class="imagenhtml">
+                        <img src="imagenes/nav.png" alt="" class="htmll">
+                    </div>
+                    <div class="contenidohtml">
+                        <br><br>
+                        <h2> <strong>¿Qué es un desarrollador Full Stack?</strong> </h2>
+
+                        <p>Sin lugar a dudas, el perfil del desarrollador Full Stack es uno de los más demandados por
+                            las empresas, y una de las profesiones número uno en búsquedas de los portales de empleo.
+                        </p>
+                        <br> <br>
+                        <h2> <strong> ¿Qué hace un desarrollador Full Stack? </strong></h2>
+                        <p> Un desarrollador Full Stack <strong> es el encargado de manejar cada uno de los aspectos
+                                relacionados
+                                con la creación y el mantenimiento de una aplicación web.</strong> Para ello es
+                            fundamental que el
+                            desarrollador Full Stack tenga conocimientos en desarrollo Front-End y Back-End. Además de
+                            manejar diferentes sistemas operativos y lenguajes de programación.
+                        </p>
+                        <p>
+                            Dicho de otra forma... <strong>El desarrollador Full Stack es un profesional
+                                todoterreno.</strong> Una pieza
+                            fundamental en los departamentos de desarrollo de cualquier empresa. Conoce cómo se diseña
+                            la aplicación web basándose en principios del diseño UX/UI. Y además, sabe programarla.
+
+                            Teniendo en cuenta todos estos aspectos es normal que sea uno de los <strong> perfiles más
+                                demandados
+                                por las empresas.</strong> El desarrollador Full Stack es <strong>capaz de establecer
+                                estrategias para cada
+                                parte del proceso de desarrollo web.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="container-fluid ofrecemos" id="ofrecemos">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card text-white bg-primary mb-3">
+                        <img src="imagenes/diseño.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ALTA CALIDAD</h5>
+                            <p class="card-text">Nuestros proyectos cumplen los más altos estandares de calidad</p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-primary mb-3">
+                        <img src="imagenes/calidad.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">DISEÑOS ÚNICOS</h5>
+                            <p class="card-text">El sitio web de tu negocio será único, y con mucho estilo</p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-primary mb-3">
+                        <img src="imagenes/warranty.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">GARANTÍA</h5>
+                            <p class="card-text">Ofrecemos garantía de satisfacción total reembolsable</p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-primary mb-3">
+                        <img src="imagenes/cumplimiento.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CUMPLIMIENTO</h5>
+                            <p class="card-text">El tiempo de ejecución de nuestro trabajos es oportuno</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid realidad" id="por">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="derecha">
+                        <img src="imagenes/fondo1.jpg" alt="" class="fondo1">
+                    </div>
+                    <div class="izquierda">
+                        <h2 class="realidad"><strong>TE DAMOS EL SITIO WEB QUE NECESITAS Y SUEÑAS</strong></h2>
+                        <h3 class="sub"> <strong> ES EL MOMENTO DE HACER DE INTERNET UN CANAL PARA TUS
+                                CLIENTES.</strong></h3> <br>
+                        <p class="real">Es sumamente importante para cualquier negocio tener presencia en Internet. Es
+                            momento de
+                            llevar tu empresa a otro nivel, aumenta la productividad de tu negocio y haz visible tu
+                            marca en el mercado digital. Te damos un sitio web único, atractivo y de calidad.
+                            Es momento de vender tus productos o servicios como un profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid team" id="team" style="background-image: url(imagenes/opcion4.jpe);">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">Misión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">Visión</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card mb-3" style="max-width: 400px;">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6 col-md-3">
+                                        <img src="..." class="card-imgg" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card mb-3" style="max-width: 400px;">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6 col-md-3">
+                                        <img src="..." class="card-imgg" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card mb-3" style="max-width: 400px;">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6 col-md-3">
+                                        <img src="..." class="card-imgg" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card mb-3" style="max-width: 400px;">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6 col-md-3">
+                                        <img src="..." class="card-imgg" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card mb-3" style="max-width: 400px;">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6 col-md-3">
+                                        <img src="..." class="card-imgg" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card mb-3" style="max-width: 400px;">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6 col-md-3">
+                                        <img src="..." class="card-imgg" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <br><br> <br>
+                    <h2>Nuestra Misión</h2> <br> <br>
+                    <h3 class="mision">Mejorar el día a día de muchas personas. Nuestra idea
+                        de negocios apoya esta visión al ofrecer un amplio rango de productos tecnológicos para
+                        empresas,
+                        microempresas, emprendedores bien
+                        diseñados y funcionales, a precios tan racionales que la mayor cantidad de gente posible pueda
+                        comprarlos.
+                    </h3>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>
