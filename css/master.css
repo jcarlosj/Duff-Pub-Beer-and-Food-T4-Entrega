@@ -677,6 +677,7 @@ a, a:hover {
 }
 .item {
     margin:0px auto;
+    background-color: #E8B504 !important;
 }
 h2, h3, h4, h5 {
     margin: 0px;
@@ -782,4 +783,14 @@ h2, h3, h4, h5 {
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.quienes-somos h3,
+.mision-vision h3,
+.team h3 {
+    color: #E8B504 !important;
+}
+.quienes-somos p,
+.mision-vision p {
+    color: white !important;
 }
