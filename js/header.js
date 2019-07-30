@@ -1,6 +1,6 @@
 $(document).ready(function ($) {
 
-    $('.barra-img').mousemove(function (event) {
+    $('.barra-img, .menu-main').mousemove(function (event) {
 
         var mouseX = event.pageX;
         var mouseY = event.pageY;
@@ -28,7 +28,7 @@ $(document).ready(function ($) {
     });
 
 
-    function tamDuffMan() {
+    function ajustesTamanos() {
 
         // Calculo del tamaño de duffman
         // Se hace una regla de tres respecto a la imagen de fondo y se redondea hacia abajo
@@ -51,10 +51,14 @@ $(document).ready(function ($) {
         // Centrado de duffman
         var centro = Math.floor(($(".barra-img").width() + $("#moe-img").width())  / 2);
         $("#moe-img").css("left", centro - widthDuffMan)
+
+        // Ajustes de posicionamiento de los botones
+        var bottomBotones = Math.floor((barraWidth * 75) / 1366)
+        $(".menu-main").css("bottom", bottomBotones);
     }
 
-    tamDuffMan();
+    ajustesTamanos();
 
-    $(window).resize(tamDuffMan);
+    $(window).resize(ajustesTamanos);
 
 }); 
