@@ -644,13 +644,28 @@ a {
 }
 
 /*SERVICIOS*/
+.servicios h1,
+.servicios h3 {
+    color: #E8B504;
+}
+.servicios h2,
+.servicios p {
+    color: white;
+}
+.card {
+    background-color: #E8B504;
+    border: 1px solid #E8B504;
+}
 .card-text{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.98rem;
     text-align:justify;
 }
-.card-title{
+.card-title {
     text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 /** NOSOTROS: Team */
 section {
@@ -662,6 +677,7 @@ a, a:hover {
 }
 .item {
     margin:0px auto;
+    background-color: #E8B504 !important;
 }
 h2, h3, h4, h5 {
     margin: 0px;
@@ -767,4 +783,14 @@ h2, h3, h4, h5 {
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.quienes-somos h3,
+.mision-vision h3,
+.team h3 {
+    color: #E8B504 !important;
+}
+.quienes-somos p,
+.mision-vision p {
+    color: white !important;
 }
