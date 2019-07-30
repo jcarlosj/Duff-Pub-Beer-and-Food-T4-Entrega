@@ -167,9 +167,9 @@ h2.realidad{
     height: 650px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 600px;
+    height: 500px;
     background-position: center;
-    background-size: 1500px;
+    background-size: 1000px;
     background-color: white;
     margin-top: 25px;
 
@@ -194,16 +194,23 @@ h3.mision{
 
 }
 #profile-tab{
-color: greenyellow;
+color: white;
 }
 #home-tab{
-    color: greenyellow;
+    color: white;
 }
 #contact-tab{
-    color: greenyellow;
+    color: white;
 }
 
 .card-imgg{
     width: 100%;
     height: auto;
 }   
+
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
