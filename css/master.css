@@ -2,11 +2,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #020202;
 }
 #map {
     height: 100%;
 }
 .icon-contact {
+    color: white;
     font-size: 7rem;
 }
 .subscripcion {
@@ -732,4 +734,37 @@ h2, h3, h4, h5 {
         width:100%;
     }
 }
-
+/** Contacto */
+.contacto h1 {
+    color: #E8B504;
+}
+.contacto p {
+    color: white;
+}
+.contacto .title {
+    color: #E8B504;
+}
+.contacto .description {
+    color: white;
+}
+.btn-contacto {
+    background-color: #E8B504;
+    color: white;
+    margin: 0 .5rem;
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #bc921e;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
