@@ -2,7 +2,7 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 #footer {
-    background: #937139 !important;
+    background: #9E1717 !important;
 }
 #footer h5{
 	padding-left: 10px;
@@ -58,9 +58,30 @@
 
 @media (max-width:767px){
 	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+		padding-left: 0;
+		border-left: transparent;
+		padding-bottom: 0px;
+		margin-bottom: 10px;
+	}
 }
+
+.modal-dialog-scrollable .modal-content {
+    border: 1px solid #9E1717 !important;
+}
+
+.modal-dialog-scrollable .modal-header {
+	background-color: #9E1717 !important;
+	color: white;
+}
+
+.modal-dialog-scrollable .modal-body {
+	background-color: black !important;
+	color: white;
+}
+.modal-dialog-scrollable .modal-footer, .modal-dialog-scrollable .modal-header {
+    background-color: #9E1717 !important;
+}
+.copyright{
+	color: #ffffff;
+	font-size: 1.2em;
 }

@@ -2,11 +2,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #020202;
 }
 #map {
     height: 100%;
 }
 .icon-contact {
+    color: white;
     font-size: 7rem;
 }
 .subscripcion {
@@ -642,13 +644,28 @@ a {
 }
 
 /*SERVICIOS*/
+.servicios h1,
+.servicios h3 {
+    color: #E8B504;
+}
+.servicios h2,
+.servicios p {
+    color: white;
+}
+.card {
+    background-color: #E8B504;
+    border: 1px solid #E8B504;
+}
 .card-text{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.98rem;
     text-align:justify;
 }
-.card-title{
+.card-title {
     text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 /** NOSOTROS: Team */
 section {
@@ -660,6 +677,7 @@ a, a:hover {
 }
 .item {
     margin:0px auto;
+    background-color: #E8B504 !important;
 }
 h2, h3, h4, h5 {
     margin: 0px;
@@ -732,4 +750,47 @@ h2, h3, h4, h5 {
         width:100%;
     }
 }
+/** Contacto */
+.contacto h1 {
+    color: #E8B504;
+}
+.contacto p {
+    color: white;
+}
+.contacto .title {
+    color: #E8B504;
+}
+.contacto .description {
+    color: white;
+}
+.btn-contacto {
+    background-color: #E8B504;
+    color: white;
+    margin: 0 .5rem;
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #bc921e;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
+}
+.quienes-somos h3,
+.mision-vision h3,
+.team h3 {
+    color: #E8B504 !important;
+}
+.quienes-somos p,
+.mision-vision p {
+    color: white !important;
+}
